@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
             },
         ],
     })
-    .then((PostData) => res.json(PostData)) // Return post data as JSON
+    .then((postData) => res.json(postData)) // Return post data as JSON
     .catch((err) => {
         console.log(err);
         res.status(500).json(err); // Return error as JSON with status code 500
@@ -52,14 +52,14 @@ router.get("/:id", (req, res) => {
             },
         ],
     })
-    .then((PostData) => {
-        if (!PostData) { // If no post is found, return 404 error
+    .then((postData) => {
+        if (!postData) { // If no post is found, return 404 error
             res.status(404).json({
                 message: "No post found with this id"
             });
             return;
         }
-        res.json(PostData); // Return post data as JSON
+        res.json(postData); // Return post data as JSON
     })
     .catch((err) => {
         console.log(err);
@@ -75,7 +75,7 @@ router.post("/", withAuth, (req, res) => {
         content: req.body.post_content,
         user_id: req.session.user_id // Set user_id to the currently logged in user
     })
-    .then((PostData) => res.json(PostData)) // Return post data as JSON
+    .then((postData) => res.json(postData)) // Return post data as JSON
     .catch((err) => {
         console.log(err);
         res.status(500).json(err); // Return error as JSON with status code 500
@@ -101,8 +101,8 @@ router.put("/:id", withAuth, (req, res) => {
         },
       }
     )
-      .then((PostData) => {
-        if (!PostData) {
+      .then((postData) => {
+        if (!postData) {
           // If no post with the given id is found in the database, send a 404 error response
           res.status(404).json({
             message: "No post found with this id",
@@ -110,7 +110,7 @@ router.put("/:id", withAuth, (req, res) => {
           return;
         }
         // If the update is successful, send a JSON response with the updated post data
-        res.json(PostData);
+        res.json(postData);
       })
       .catch((err) => {
         // If any error occurs, send a 500 error response
@@ -127,8 +127,8 @@ router.put("/:id", withAuth, (req, res) => {
         id: req.params.id,
       },
     })
-      .then((PostData) => {
-        if (!PostData) {
+      .then((postData) => {
+        if (!postData) {
           // If no post with the given id is found in the database, send a 404 error response
           res.status(404).json({
             message: "No post found with this id",
@@ -136,7 +136,7 @@ router.put("/:id", withAuth, (req, res) => {
           return;
         }
         // If the deletion is successful, send a JSON response with the deleted post data
-        res.json(PostData);
+        res.json(postData);
       })
       .catch((err) => {
         // If any error occurs, send a 500 error response
