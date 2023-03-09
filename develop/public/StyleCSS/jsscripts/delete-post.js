@@ -1,19 +1,26 @@
+// Define the deleteFormHandler function
 async function deleteFormHandler(event) {
+    // Prevent the default form submission behavior
     event.preventDefault();
-
-    const post_id = window.location.toString().split('/')[
-        window.location.toString().split('/').length - 1
-    ];
-
+  
+    // Get the post ID from the current URL
+    const post_id = window.location.toString().split('/').pop();
+  
+    // Send a DELETE request to the server to delete the post
     const response = await fetch(`/api/posts/${post_id}`, {
-        method: 'DELETE'
+      method: 'DELETE'
     });
-
+  
+    // If the response is OK, redirect to the dashboard
     if (response.ok) {
-        document.location.replace('/dashboard');
+      window.location.replace('/dashboard');
     } else {
-        alert(response.statusText);
+      // If there was an error, show an alert with the status text
+      alert(response.statusText);
     }
-}
-
-document.querySelector('.delete-post-btn').addEventListener('click', deleteFormHandler);
+  }
+  
+  // Add an event listener to the delete button
+  const deleteButton = document.querySelector('.delete-post-btn');
+  deleteButton.addEventListener('click', deleteFormHandler);
+  
