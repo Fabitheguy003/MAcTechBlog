@@ -1,5 +1,6 @@
-import { Router } from 'express';
-import { User, Post, Comment } from '../../models';
+const express = require('express');
+const { Router } = require('express');
+const { User, Post, Comment } = require('../../models');
 
 const router = Router();
 
@@ -80,4 +81,4 @@ router.post('/logout', (req, res) => {
   else res.status(404).end();
 });
 
-export default router;
+module.exports = router;
