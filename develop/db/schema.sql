@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS fab_blog_db;
+
+CREATE DATABASE fab_blog_db;
