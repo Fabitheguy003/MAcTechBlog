@@ -89,14 +89,14 @@ To ask questions about the project, contact me directly at devarsh2395@gmail.com
 
 # screenshots
 
-![Screenshot](/develop/Public//images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_15_03%20PM.png)
+![Screenshot](./Public/images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_15_03%20PM.png)
 
 &nbsp;
 
-![Screenshot](/develop/Public/images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_15_44%20PM.png)
+![Screenshot](./Public/images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_15_44%20PM.png)
 
 &nbsp;
-![Screenshot](/develop/Public//images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_17_20%20PM.png)
+![Screenshot](./Public/images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_17_20%20PM.png)
 
 &nbsp;
-![Screenshot](/develop/Public/images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_19_27%20PM.png)
+![Screenshot](./Public/images/The%20Tech%20Blog%20and%209%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202023-03-20%203_19_27%20PM.png)
